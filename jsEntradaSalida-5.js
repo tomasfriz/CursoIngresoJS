@@ -1,12 +1,17 @@
 /*Debemos lograr tomar nombre y edad por ID y mostrarlos concatenados 
 ej.: "Usted se llama José y tiene 66 años" 	*/
 function Mostar()
-{		
-var nombre;
-var edad;
+{	
+	var base;
+	var perimetro;
 
-nombre= document.getElementById('elNombre').value;
-edad= document.getElementById('laEdad').value;
-alert(" Usted se llama " +nombre+ " y tiene " +edad+ " años " );
+	base= document.getElementById('laBase').value;
+	perimetro= base*4;
+	alert()
+
 }
+
+
+
+	
 
