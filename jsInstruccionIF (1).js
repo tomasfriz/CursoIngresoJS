@@ -1,8 +1,7 @@
 function Mostrar()
 {
-//tomo la edad  
     var edad;
-    edad=15;
+    edad = 15;
 
     edad = document.getElementById("edad").value;
     edad = parseInt(edad);
@@ -11,6 +10,5 @@ function Mostrar()
     {
         alert("niña bonita");
     }
-
 
 }//FIN DE LA FUNCIÓN
