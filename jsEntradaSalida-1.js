@@ -2,6 +2,5 @@
 function Mostar()
 {
 	alert("anda bien");
-
 }
 
