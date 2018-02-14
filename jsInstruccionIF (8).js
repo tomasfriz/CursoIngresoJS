@@ -21,10 +21,8 @@ function Mostrar()
             }
 
     }
-            
 
-  //hay error 
-    
+	
 
 
 }//FIN DE LA FUNCIÓN
