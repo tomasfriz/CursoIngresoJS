@@ -12,7 +12,7 @@ function Mostrar()
         {
             alert("es muy pequeño para NO ser soltero");
         }
-        
     }
 
+	
 }//FIN DE LA FUNCIÓN
