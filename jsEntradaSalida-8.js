@@ -18,4 +18,5 @@ function SacarResto()
 
     alert("el resultado es: " + resultado);
 	
+   
 }
