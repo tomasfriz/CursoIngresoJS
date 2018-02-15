@@ -5,8 +5,10 @@
 function Mostar()
 {
 	var dato;
-	dato= prompt("mi nombre es: ");
-	document.getElementById('elNombre').value =dato;
+
+	dato = prompt("mi nombre es: ");
 	
+	document.getElementById('elNombre').value = dato;
+
 }
 
