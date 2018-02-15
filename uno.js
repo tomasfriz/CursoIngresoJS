@@ -5,11 +5,13 @@ function Mostrar()
     var perimetro;
     
     base = document.getElementById("laBase").value;
-    base = parseInt(base);
-    perimetro = base * 4;
-    perimetro = parseInt(perimetro);
-    alert("el resultado es: "+perimetro);
 
-  
+    base = parseInt(base);
+
+    perimetro = base * 4;
+
+    perimetro = parseInt(perimetro);
+
+    alert("el resultado es: " +perimetro);
 
 }
