@@ -3,7 +3,7 @@ transformarlos a enteros (parseInt),realizar la operación correcta y
 mostar el resulto por medio de "ALERT"
 ej.: "la Resta es 750"*/ 
 function sumar()
-{	
+{
     var numeroUno;
     var numeroDos;
     var resultado;
@@ -39,7 +39,7 @@ function restar()
 }
 
 function multiplicar()
-{ 
+{
     var numeroUno;
     var numeroDos;
     var resultado;
