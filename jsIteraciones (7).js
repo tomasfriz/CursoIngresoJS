@@ -10,10 +10,10 @@ function Mostrar()
 	while(respuesta = "si")
 		{
 			contador++;
-			numero = prompt("ingrese un numero.");
+			numero = prompt("ingrese un numero");
 			numero = parseInt(numero);
 			acumulador = acumulador + numero;
-
+			respuesta = prompt("ingrese si para continuar");
 		}
 
 		promedio = acumulador / contador;
