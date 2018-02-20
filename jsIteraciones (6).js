@@ -8,7 +8,7 @@ function Mostrar()
 	
 	while(contador<iteraciones)
 	{
-		contador++
+		contador++;
 		numero = prompt("ingrese un numero.");
 		numero = parseInt(numero);
 		acumulador = acumulador + numero;
