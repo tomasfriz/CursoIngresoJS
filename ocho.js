@@ -3,19 +3,22 @@ function Mostrar()
     var nombre;
     var cantidad=0;
     var sexo;
-    var continuar = "";
+    var continuar = "si";
+    sexo = "m";
+    sexo = "f";
 
     while(continuar != "no")
     {
         nombre = prompt("ingrese nombre");
         cantidad = cantidad +1;
-        if(sexo = m)
+        sexo = prompt("ingrese sexo");
+        if(sexo = "m")
         {
             alert("es masculino");
         }
-        if(sexo = femenino)
+        if(sexo = "f")
         {
-            alert("es f");
+            alert("es femenino");
         }
     }
 }
