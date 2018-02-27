@@ -1,46 +1,28 @@
-function Mostrar()
+function Mostrar() 
 {
     var contador=0;
-    var maximo;
-    var minimo;
-    var contadorPares=0;
-    var contadorImpares=0;
-    var contadorPositivos=0;
-    var flag=true;
-    var numero;
-    var acumuladorPositivos=0;
-    var promedio;
+    var peso;
+    var interacciones=5;
+    var maximoPeso;
+    var minimoPeso;
 
 
-    while(true)
+    while (contador < interacciones) 
     {
-        numero = prompt("ingresar un numero");
+        contador++;
+        peso = prompt("ingrese peso del contenedor");
+        peso = parseInt(peso);
 
-        if(numero == null)
+        if (peso > maximoPeso) 
         {
-            break;
+            maximoPeso = peso;
+            document.write("el contenedor mas pesado es: " + maximoPeso + "<br/>");
         }
-        numero = parseInt(numero);
-        if(numero % 2 == 1)
+        if (peso < minimoPeso)
         {
-            contadorImpares++;
+            minimoPeso = peso;
+            document.write("el contenedor menos pesado es: " + minimoPeso + "<br/>");
         }
-        if(numero % 2 == 0)
-        {
-            contadorPares++;
-        }
-        if(numero>0)
-        {
-            contadorPositivos++;
-        }
-        
     }
-
-
-
 }
-/*contadorpare
-contadorimpares
-contadorpositivo
-promedio
-numero*/
+//no se como lograrlo que funcione. no se lo que esta mal. requiero ayuda profesional.
