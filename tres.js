@@ -1,19 +1,25 @@
-function Mostrar() 
+function Mostrar()
 {
-    var largo;
-    var ancho;
+    var precioUno;
+    var precioDos;
+    var precioTres;
+    var promedio;
     var resultado;
 
-    largo = document.getElementById("alrgo").value;
-    ancho = document.getElementById("ancho").value;
+    precioUno = document.getElementById("precioUno").value;
+    precioDos = document.getElementById("precioDos").value;
+    precioTres = document.getElementById("precioTres").value;
 
-    largo = parseInt(largo);
-    ancho = parseInt(ancho);
-    
-    resultado = (largo * 2 + ancho * 2) * 3;
+    precioUno = parseInt(precioUno);
+    precioDos = parseInt(precioDos);
+    precioTres = parseInt(precioTres);
+
+    resultado = precioUno + precioDos + precioTres;
 
     resultado = parseInt(resultado);
 
-    alert("el resultado es: " + resultado);
+    promedio = resultado / 3;
 
+    alert("la suma de sus precios es: " +resultado);
+    alert("el promedio de sus precios es: " +promedio);
 }
