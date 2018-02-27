@@ -1,17 +1,13 @@
 
 function Mostrar()
 {
-    var base;
+    var altura;
     var perimetro;
+    var superficie;
     
-    base = document.getElementById("laBase").value;
-
-    base = parseInt(base);
-
-    perimetro = base * 4;
-
-    perimetro = parseInt(perimetro);
-
-    alert("el resultado es: " +perimetro);
+    altura = prompt("ingrese la altura del triangulo equilatero.");
+    
+    alert("el perimetro es: " +perimetro);
+    alert("la superficie es: " +superficie);
 
 }

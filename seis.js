@@ -1,14 +1,46 @@
 function Mostrar()
 {
-    var importes;
-    importe > 0;
-    importes = documnet.getElementById("importeFinal").value;
+    var contador=0;
+    var maximo;
+    var minimo;
+    var contadorPares=0;
+    var contadorImpares=0;
+    var contadorPositivos=0;
+    var flag=true;
+    var numero;
+    var acumuladorPositivos=0;
+    var promedio;
 
-    while(importe < 0)
+
+    while(true)
     {
-        importe = prompt("ingrese importe de venta");
+        numero = prompt("ingresar un numero");
+
+        if(numero == null)
+        {
+            break;
+        }
+        numero = parseInt(numero);
+        if(numero % 2 == 1)
+        {
+            contadorImpares++;
+        }
+        if(numero % 2 == 0)
+        {
+            contadorPares++;
+        }
+        if(numero>0)
+        {
+            contadorPositivos++;
+        }
         
     }
 
 
+
 }
+/*contadorpare
+contadorimpares
+contadorpositivo
+promedio
+numero*/
