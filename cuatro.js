@@ -1,64 +1,33 @@
 function Mostrar()
 {
-   var numeroUno;
-   var numeroDos;
-   var numeroTres;
-   
-   numeroUno = prompt("ingrese un numero");
-   numeroUno = parseInt(numeroUno);
-   numeroDos = prompt("ingrese un segundo numero");
-   numeroDos =parseInt(numeroDos);
-   numeroTres = prompt("ingrese un tercer numero");
-   numeroTres = parseInt(numeroTres);
-   
-   if(numeroUno<numeroDos && numeroUno<numeroTres)
-   {
-       alert("el numero menor es: " +numeroUno);
-   }
-   else
-   {
-       if(numeroDos<numeroUno && numeroDos<numeroTres)
-       {
-           alert("el numero intermedio es: " +numeroDos);
-       }
-       else
-       {
-           alert("el numero mayor es: " +numeroTres);
-       }
-   }
+    var numeroUno;
+    var numeroDos;
+    var numeroPositivo;
+    var numeroNegativo;
+    var numeroCero;
+    var resultado;
 
-}
-/*var numero;
-var maximo;
-var minimo;
-var contador=0;
-var flag=true;
+    numeroUno = prompt("ingrese un numero");
+    numeroDos = prompt("ingrese un segundo numero");
 
-while(true)
-{
-    numero = prompt("ingrese un numero");
-    if(numero == null)
+    numeroUno = parseInt(numeroUno);
+    numeroDos = parseInt(numeroDos);
+
+    resultado = numeroUno + numeroDos;
+    
+    if(resultado>0)
     {
-        break;
+        numeroPositivo = resultado;
+        document.write("el resultado es positivo " +numeroPositivo+ "<br/>");
     }
-    if(true == flag)
+    else if(resultado<0)
     {
-        maximo = numero;
-        minimo = numero;
-        flag = false;
+        numeroNegativo = resultado;
+        document.write("el resultado es negativo " +numeroNegativo+ "<br/>");
     }
     else
     {
-        if(numero>maximo);
-        {
-            maximo = numero;
-        }
-        if(numero<minimo);
-        {
-            minimo = numero;
-        }
-        document.write("el maximo de los numeros es: " +maximo+ "<br/>");
-        document.write("el minimo de los numeros es " +minimo+ "<br/>");
-    }
-
-}*/
+        numeroCero = resultado;
+        document.write("el resultado es igual a cero " +numeroCero+ "<br/>");
+    } 
+}
