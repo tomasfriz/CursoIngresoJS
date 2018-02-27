@@ -1,63 +1,50 @@
-function Mostrar()
-{
-    var numMin;
-    var letraMin;
-    var numMax;
-    var letraMax;
-    var letra;
-    var numero;
-    var respuesta="si";
-    var interacciones;
+function Mostrar() {
+    var edad;
+    var sexo;
+    var interacciones = 3;
+    var contador = 0;
+    var promedio;
+    var edadBaja;
+    var edadAlta;
+    sexo = "f";
+    sexo = "m";
 
-    while(respuesta!="no")
+    while (contador < interacciones) 
     {
-        interacciones++;
-        letra=prompt("ingrese una letra");
-        while(!(isNaN(letra)))
+        contador++;
+
+        if (edad > 0 && edad < 100) 
         {
-            letra=prompt("ingrese una letra");
+            edad = prompt("ingrese una edad");
+            edad = parseInt(edad);
+
+            promedio = edad / 3;
+            alert("el promedio es: " +promedio+ "<br/>");
         }
-        numero=prompt("ingreso un numero");
-        numero =parseInt(numero);
-        while(numero>200 || numero<-200 || isNaN(numero))
+        if (sexo == "f" || sexo == "m") 
         {
-            numero = prompt("ingrese un numero entre 200 y -200");
-            numero = parseInt(numero);
+            sexo = prompt("ingrese un sexo");
+            sexo = parseInt("sexo");
         }
-        if(interacciones==1)
+        else 
         {
-            numMin = numero;
-            letraMin = letra;
-            numMax = numero;
-            letraMax = letra;
+            if(edad>edadAlta)
+            {
+                edadAlta = edad;
+            }
+            if(edad<edadBaja)
+            {
+                edadBaja = edad;
+                alert("la edad mas baja es: " +edadBaja+ "<br/>");
+            }
+            
         }
-        if(numMin<numero)
-        {
-            numMin = numero;
-            letraMin = letra;
-        }
-        if(numMax>numero)
-        {
-            numMax = numero;
-            letraMax = letra;
-        }
-        switch(letra)
-              {
-                  case "a":
-                  case "e":
-                  case "i":
-                  case "o":
-                  case "u":
-                      numeroVocal++;
-                      contarVocal=contarVocal+numero;
-                      break;
-                  default:    
-              }
+        
+        
     }
-    
+    //no lo puedo terminar porque creo que se usa "for" y yo lo estoy haciendo de la manera dificil. nunca me enceñaron "for".
 
 
 
-    
 
 }
