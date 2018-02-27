@@ -20,9 +20,10 @@ function Mostrar()
             numerosPositivos++;
             document.while("los numeros positivos son: " +numerosPositivos+ "<br/>");
         }
-        
+
 
 
     }
 
 }
+// falta terminar los códigos y verificar. el programa esta intermedia. no se si voy por buen camino.
