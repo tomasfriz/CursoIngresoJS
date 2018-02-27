@@ -1,27 +1,28 @@
-function Mostrar() 
+function Mostrar()
 {
+    var numerosPositivos=0;
+    var contadorPares=0;
+    var promedio;
+    var suma;
+    var maximo;
+    var minimo;
 
-    var nombre;
-    var cantidad = 0;
-    var sexo;
-    var continuar = "si";
-    sexo = "m";
-    sexo = "f";
 
-    while (continuar != "no") 
+    while(true)
     {
-        nombre = prompt("ingrese nombre");
-        cantidad = cantidad + 1;
-        sexo = prompt("ingrese sexo");
+        if(numerosPositivos == null)
+        {
+            break;
+        }
+        numerosPositivos = parseInt(numerosPositivos);
+        if(numerosPositivos>=0)
+        {
+            numerosPositivos++;
+            document.while("los numeros positivos son: " +numerosPositivos+ "<br/>");
+        }
+        
 
-        if (sexo = "m")
-        {
-            alert("es masculino");
-        }
-        if (sexo = "f")
-        {
-            alert("es femenino");
-        }
-         continuar = prompt("no, para continuar");
+
     }
+
 }
