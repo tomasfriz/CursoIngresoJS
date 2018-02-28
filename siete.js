@@ -12,15 +12,17 @@ function Mostrar() {
     while (contador < interacciones) 
     {
         contador++;
-
-        if (edad > 0 && edad < 100) 
+        edad = prompt("ingrese una edad");
+        edad = parseInt(edad);
+       while(edad< 0|| edad > 100) 
         {
             edad = prompt("ingrese una edad");
             edad = parseInt(edad);
+        } 
 
-            promedio = edad / 3;
-            alert("el promedio es: " +promedio+ "<br/>");
-        }
+
+
+
         if (sexo == "f" || sexo == "m") 
         {
             sexo = prompt("ingrese un sexo");

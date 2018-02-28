@@ -12,6 +12,11 @@ function Mostrar()
         contador++;
         peso = prompt("ingrese peso del contenedor");
         peso = parseInt(peso);
+        if(contador==1)
+        {
+            maximoPeso=peso;
+            minimoPeso=peso;
+        } 
 
         if (peso > maximoPeso) 
         {

@@ -3,31 +3,35 @@ function Mostrar()
 {
 	var numeroUno;
 	var numeroDos;
-	var resultado;
+	var resultadoUno;
+	var resultadoDos;
+	var resultadoTres;
+	var numerosPares=2;
 
 	numeroUno = prompt("ingrese un numero");
 	numeroDos = prompt("ingrese un segundo numero");
-
 	numeroUno = parseInt(numeroUno);
 	numeroDos = parseInt(numeroDos);
 
 	if(numeroUno>numeroDos)
 	{
-		resultado = numeroUno - numeroDos;
-		resultado = parseInt(resultado);
-		document.write("la resta da: " +resultado+ "<br/>");
+		resultadoUno = numeroUno * numeroDos;
+		alert("el resultado es: " +resultadoUno);
 	}
 	else if(numeroUno<numeroDos)
 	{
-		resultado = numeroUno + numeroDos;
-		resultado = parseInt(resultado);
-		document.write("la suma da: " +resultado+ "<br/>");
+		resultadoDos = numeroUno - numeroDos;
+		alert("el resultado es: " +resultadoDos);
 	}
 	else
 	{
-		resultado = numeroUno * numeroDos;
-		resultado = parseInt(resultado);
-		document.write("la multiplicacion da: " +resultado+ "<br/>");
+		resultadoTres = numeroUno == numeroDos;
+		alert("el resultado es: " +resultadoTres);
 	}
+	if(resultadoUno && resultadoUno % 2 == 0)
+	{
+		alert("el resulta")
+	}
+	
 }
 

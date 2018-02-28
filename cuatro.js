@@ -17,17 +17,17 @@ function Mostrar()
     
     if(resultado>0)
     {
-        numeroPositivo = resultado;
-        document.write("el resultado es positivo " +numeroPositivo+ "<br/>");
+       
+        document.write("el resultado es positivo " +resultado+ "<br/>");
     }
     else if(resultado<0)
     {
-        numeroNegativo = resultado;
-        document.write("el resultado es negativo " +numeroNegativo+ "<br/>");
+       
+        document.write("el resultado es negativo " +resultado+ "<br/>");
     }
     else
     {
-        numeroCero = resultado;
-        document.write("el resultado es igual a cero " +numeroCero+ "<br/>");
+      
+        document.write("el resultado es igual a cero " +resultado+ "<br/>");
     } 
 }
