@@ -1,28 +1,21 @@
 function Mostrar()
 {
-    var mes;
+    var diaDeLaSemana;
 
-    mes = prompt("ingrese un mes");
+    diaDeLaSemana = prompt("ingrese dia de la semana");
 
-    switch(mes)
+    switch(diaDeLaSemana)
     {
-        case "enero":
-            alert("comienza el año");
+        case "lunes":
+        case "martes":
+        case "miercoles":
+        case "jueves":
+        case "viernes":
+            alert("a trabajar!!!");
             break;
-        case "febrero":
-        case "marzo":
-        case "abril":
-        case "mayo":
-        case "junio":
-        case "julio":
-        case "agosto":
-        case "septiembre":
-        case "octubre":
-        case "noviembre":
-            alert("no es enero, ni diciembre");
-            break;
-        case "diciembre":
-            alert("se vienen las fiestas");
+        case "sabado":
+        case "domingo":
+            alert("es fin de semana");
     }
 
 }
