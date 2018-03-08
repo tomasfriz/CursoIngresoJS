@@ -2,32 +2,28 @@ function Mostrar()
 {
     var numeroUno;
     var numeroDos;
-    var numeroPositivo;
-    var numeroNegativo;
-    var numeroCero;
     var resultado;
 
-    numeroUno = prompt("ingrese un numero");
-    numeroDos = prompt("ingrese un segundo numero");
+    numeroUno = prompt("ingrese un numero.");
+    numeroDos = prompt("ingrese un segundo numero.");
 
     numeroUno = parseInt(numeroUno);
     numeroDos = parseInt(numeroDos);
 
-    resultado = numeroUno + numeroDos;
-    
-    if(resultado>0)
+    if(numeroUno>numeroDos)
     {
-       
-        document.write("el resultado es positivo " +resultado+ "<br/>");
+        resultado = numeroUno - numeroDos;
+        document.write("el resultado de la resta es: " +resultado);
     }
-    else if(resultado<0)
+    else if(numeroUno<numeroDos)
     {
-       
-        document.write("el resultado es negativo " +resultado+ "<br/>");
+        resultado = numeroUno + numeroDos;
+        document.write("el resultado de la suma es: " +resultado);
     }
     else
     {
-      
-        document.write("el resultado es igual a cero " +resultado+ "<br/>");
-    } 
+        resultado = numeroUno * numeroDos;
+        document.write("el resultado de la multiplicacion es: " +resultado);
+    }
+
 }
