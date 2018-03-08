@@ -2,11 +2,13 @@
 function Mostrar()
 {
     var base;
-    var superficie;
+    var perimetro;
 
     base = document.getElementById("laBase").value;
+    base = parseInt(base);
 
-    superficie = base * base;
+    perimetro = base * 4;
 
-    alert("la superficie del cuadrado es: " +superficie);
+    alert("el perimetro del cuadrado es: " +perimetro);
+
 }
