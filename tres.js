@@ -1,25 +1,17 @@
 function Mostrar()
 {
-    var precioUno;
-    var precioDos;
-    var precioTres;
-    var promedio;
-    var resultado;
+    var largo;
+    var ancho;
+    var perimetro;
 
-    precioUno = document.getElementById("precioUno").value;
-    precioDos = document.getElementById("precioDos").value;
-    precioTres = document.getElementById("precioTres").value;
+    largo = document.getElementById("alrgo").value;
+    ancho = document.getElementById("ancho").value;
 
-    precioUno = parseInt(precioUno);
-    precioDos = parseInt(precioDos);
-    precioTres = parseInt(precioTres);
+    largo = parseInt(largo);
+    ancho = parseInt(ancho);
 
-    resultado = precioUno + precioDos + precioTres;
+    perimetro =  (2 * largo +  2 * ancho) * 3;
 
-    resultado = parseInt(resultado);
+    alert("se necesitan " +perimetro+ " metros de alambre.");
 
-    promedio = resultado / 3;
-
-    alert("la suma de sus precios es: " +resultado);
-    alert("el promedio de sus precios es: " +promedio);
 }
