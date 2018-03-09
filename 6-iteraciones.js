@@ -1,47 +1,35 @@
 //Debemos lograr mostrar un mensaje al presionar el botón  'MOSTRAR'.
 function Mostrar()
 {
-	var importe;
-	var DiaDeLaSemana;
-	var maximoImporte;
-	var minimoImporte;
-	var interacciones=7;
+	var nota;
+	var sexo;
+	var promedio;
+	var maximo;
+	var minimo;
+	var contador = 0;
+	var cantidad;
+	var acumulador;
+	var interacciones = 5;	
 
-	while(!(importe<0))
+	while(interacciones<=5)
 	{
-		switch(DiaDeLaSemana)
+		
+		
+		
+		while(!(nota<0 || nota>10))
 		{
-			case "lunes":
-			     break;
-			case "martes":
-			     break;
-			case "miercoles":
-			     break;
-			case "jueves":
-			     break;
-			case "viernes":
-			     break;
-			case "sabado":
-			     break;
-			case "domingo":
+			contador++;
+			nota = prompt("ingrese la nota del alumno.");
+			nota = parseInt(nota);
 		}
-		importe = prompt("ingrese el importe de las ventas");
-		importe = parseInt(importe);
-		DiaDeLaSemana = prompt("ingrese el dia de la semana");
-		DiaDeLaSemana = parseInt(DiaDeLaSemana);
-
-		if(importe>maximoImporte)
+		while(!(sexo=="m" && sexo=="f" && isNaN))
 		{
-			maximoImporte = importe;
-			alert("el mayor importe es: " +maximoImporte);
+			contador++;
+	        sexo = prompt("ingrese el sexo del alumno.");
 		}
-		if(importe<minimoImporte)
-		{
-			minimoImporte = importe;
-			alert("el menor importe es: " +minimoImporte);
-		}
-
 	}
+
+
 	
 }
 
