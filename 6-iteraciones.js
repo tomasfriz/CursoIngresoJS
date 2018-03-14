@@ -1,63 +1,50 @@
 //Debemos lograr mostrar un mensaje al presionar el botón  'MOSTRAR'.
-function Mostrar()
+function Mostrar() 
 {
 	var nota;
 	var sexo;
 	var promedio;
-	var maximo;
 	var minimo;
 	var contador = 0;
-	var cantidad;
-	var acumulador;
-	var interacciones = 5;
-	var flag = true;	
+	var contadorVarones = 0;
+	var acumulador = 0;
+	var SexoMin;
+	var flag = true;
 
-	while(contador<interacciones)
+	while (contador < 5) 
 	{
-		
-		while(!(nota<0 || nota>10 || isNaN(nota)))
+		do
 		{
-			contador++;
 			nota = prompt("ingrese la nota del alumno.");
 			nota = parseInt(nota);
 		}
-		while(!(sexo=="m" && sexo=="f" && isNaN(sexo)))
+		while (nota < 0 || nota > 10 || isNaN(nota)) 
+		
+		do
 		{
-			contador++;
-	        sexo = prompt("ingrese el sexo del alumno.");
+			sexo = prompt("ingrese el sexo del alumno.");
 		}
-	}
-	promedio = contador / nota;
-	alert("el promedio es: " +promedio);
-	while(true)
-	{
-		if(flag==true)
+		while (sexo != "m" && sexo != "f") 
+
+		if (flag == true || nota < minimo)
 		{
-			nota = maximo;
-			nota = minimo;
+			minimo = nota;
+			SexoMin = sexo;
 			flag = false;
 		}
-		else
+
+		if (nota > 5 && sexo == 'm') 
 		{
-			if(nota > maximo)
-		    {
-				maximo = nota;
-			}
-			if(nota < minimo)
-			{
-				minimo = nota;
-			}
-		}
-		if(minimo == nota && sexo == nota)
-		{
-			
+			contadorVarones++;
 		}
 
-		
-		
+		acumulador += nota;
+		contador++;
 
 	}
 
-	
+	promedio = acumulador / contador;
+	alert("el promedio es: " + promedio + " hubo " +contadorVarones+ " varones con una nota mayor e igual a seis");
+	alert("la nota mas baja es: " +minimo+ " y el sexo correspondiente " +SexoMin);
 }
 
