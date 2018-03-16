@@ -42,8 +42,8 @@ function Mostrar()
 		contador++;
 
 	}
-
 	promedio = acumulador / contador;
+
 	alert("el promedio es: " + promedio + " hubo " +contadorVarones+ " varones con una nota mayor e igual a seis");
 	alert("la nota mas baja es: " +minimo+ " y el sexo correspondiente " +SexoMin);
 }
