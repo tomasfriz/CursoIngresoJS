@@ -52,12 +52,11 @@ function Mostrar()
 			suma = acumuladorNegativos + numero;
 		}
 		respuesta = confirm("¿Desea continuar?");
-		
-
 	}
 	document.write("la cantidad de numeros pares es: " +contadorPar+ "<br/>");
 	document.write("la cantidad de numeros impares es: " +contadorImpar+ "<br/>");
 	document.write("la cantidad de numeros ceros es: " +contadorCeros+ "<br/>");
 	document.write("el promedio de todos los numeros positivos es: " +promedio+ "<br/>");
+	document.write("la suma de todos los numeros negativos es: " +suma+ "<br/>");
 }
 
