@@ -40,7 +40,6 @@ function Mostrar()
 
 		acumulador += nota;
 		contador++;
-
 	}
 	promedio = acumulador / contador;
 

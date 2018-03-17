@@ -15,6 +15,7 @@ function Mostrar()
 	var acumuladorPositivo=0;
 	var acumuladorNegativos=0;
 	var suma;
+	var flag = true;
 
 	while(respuesta == true)
 	{
@@ -43,13 +44,33 @@ function Mostrar()
 		}
 		if(numero > 0 && numero < 100)
 		{
-			acumuladorPositivo
+			acumuladorPositivo = numero;
 			promedio = acumuladorPositivo / numero;
 		}
 		if(numero > -100 && numero < 0)
 		{
 			acumuladorNegativos = numero;
 			suma = acumuladorNegativos + numero;
+		}
+		while(true)
+		{
+			if(true == flag)
+			{
+				maximo = numero;
+				minimo = numero;
+				flag = false;
+			}
+			else
+			{
+				if(numero > maximo)
+				{
+					maximo = numero;
+				}
+				if(numero < maximo)
+				{
+					minimo = numero;
+				}
+			}//como coloco la letra con el maximo y el minimo.
 		}
 		respuesta = confirm("¿Desea continuar?");
 	}
@@ -58,5 +79,7 @@ function Mostrar()
 	document.write("la cantidad de numeros ceros es: " +contadorCeros+ "<br/>");
 	document.write("el promedio de todos los numeros positivos es: " +promedio+ "<br/>");
 	document.write("la suma de todos los numeros negativos es: " +suma+ "<br/>");
+	document.write("el numero maximo es: " +maximo+ " y su letra es: " +letra+ "<br/>");
+	document.write("el numero minimo es: " +minimo+ " y su letra es: " +letra+ "<br/>");
 }
 

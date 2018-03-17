@@ -12,8 +12,9 @@ function Mostrar()
 	var maximoProducto;
 	var contadorProducto;
 	var promedio;
-	var flag=true;
+	var flag1=true;
 	var acumulador=0;
+	var flag2
 
 
 	while (respuesta == true) 
@@ -40,15 +41,35 @@ function Mostrar()
 		{
 			contadorPar++;
 		}
-		if(flag == true || producto < maximoProducto)
+		if(flag1 == true || producto < maximoProducto)
 		{
 			maximoProducto = producto;
-			flag = false;
+			flag1 = false;
 		}
 		if(producto < 0)
 		{
 			contadorProducto++;
 		}
+		while(true)
+		{
+			if(true == flag2)
+			{
+				maximo = peso;
+				minimo = peso;
+				flag2 = false;
+			}
+			else
+			{
+				if(peso > maximo)
+				{
+					maximo = peso;
+				}
+				if(peso < maximo)
+				{
+					minimo = peso;
+				}
+			}
+		}		
 		acumulador += peso;
 
 		respuesta = confirm("¿desea continuar?");
