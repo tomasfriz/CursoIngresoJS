@@ -7,20 +7,19 @@ function Mostrar()
 	var maximo;
 	var minimo;
 	var respuesta=true;
-	var contador=0;
-	var contadorPar;
+	var contadorPar=0;
 	var maximoProducto;
-	var contadorProducto;
+	var contadorProducto=0;
 	var promedio;
-	var flag1=true;
+	var flag=true;
 	var acumulador=0;
-	var flag2
+	var contador=0;
 
 
 	while (respuesta == true) 
 	{
-		contador++;
-
+	
+		
 		producto = prompt("ingrese la marca del producto.");
 
 		do
@@ -41,39 +40,25 @@ function Mostrar()
 		{
 			contadorPar++;
 		}
-		if(flag1 == true || producto < maximoProducto)
-		{
-			maximoProducto = producto;
-			flag1 = false;
-		}
-		if(producto < 0)
+		
+		if(temperatura < 0)
 		{
 			contadorProducto++;
 		}
-		while(true)
+
+		if(true == flag || peso > maximo)
 		{
-			if(true == flag2)
-			{
-				maximo = peso;
-				minimo = peso;
-				flag2 = false;
-			}
-			else
-			{
-				if(peso > maximo)
-				{
-					maximo = peso;
-				}
-				if(peso < maximo)
-				{
-					minimo = peso;
-				}
-			}
-		}		
+			maximo = peso;
+			maximoProducto = producto;
+		}
+		if(true == flag || peso < minimo)
+		{
+			minimo = peso;
+			flag = false;
+		}
 		acumulador += peso;
-
+		contador++;
 		respuesta = confirm("¿desea continuar?");
-
 	}
 	promedio = acumulador / contador;
 
